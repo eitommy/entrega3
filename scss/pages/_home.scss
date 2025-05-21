@@ -1,0 +1,15 @@
+body {
+  font-family: $font-stack;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  @include responsive-text(1.5rem, 2.5rem);
+  color: $primary-color;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
